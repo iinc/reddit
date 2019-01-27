@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/css/all.css">
+    <link rel="icon" href="http://localhost:3001/images/favicon.ico">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <div id="content-body">
+        <div>
+            <%- include templates/header.ejs %>
+            <p>Let me tell you something about this website...</p>
+            <div>
+                <div class="preset-columns">
+                    <% for (var preset of presets){%>
+                        <div class="preset">
+                            <a href="http://localhost:3001/r/<%= preset.subreddits.join('+') %>">
+                                <%= preset.link %>
+                            </a>
+                            <span>- <%= preset.label %></span>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

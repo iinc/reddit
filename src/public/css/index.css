@@ -1,0 +1,32 @@
+#content-body {
+    max-width: 1080px;
+    margin: 0 auto !important;
+}
+#content-body> div {
+    margin: 20px;
+}
+.preset-columns {
+    -moz-column-width: 16em;
+    -webkit-column-width: 16em;
+    column-width: 16em;
+}
+
+.preset {
+    padding: 5px 10px;
+    max-width: 450px;
+
+    width: 100%;
+
+    /* prevent column wraping within elements */
+    overflow: hidden; /* Fix for firefox and IE 10-11  */
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Deprecated Firefox */
+    -moz-column-break-inside:avoid; /* Current Firefox */
+    column-break-inside:avoid;
+    break-inside: avoid; /* IE 10+ */
+    break-inside: avoid-column;
+}
+.preset a {
+    color: blue;
+    text-decoration: none;
+}

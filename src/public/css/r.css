@@ -1,0 +1,180 @@
+#r-content-body {
+    margin: 20px
+}
+
+.element {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.element img {
+  position: absolute;
+}
+
+#options {
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#options button, #nsfw label {
+    cursor: pointer;
+}
+
+#add-subreddit, #nsfw, #sort {
+    margin: 4px;
+    display: inline-block;
+    font-size: 1em;
+    vertical-align: middle;
+    margin: 0px 4px;
+}
+
+#add-subreddit button, #add-subreddit input, #sort button {
+    padding: 8px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+}
+
+#add-subreddit button {
+    background-color: #dddddd;
+}
+
+#add-subreddit button:hover{
+  border-bottom: solid 2px #969696;
+  outline: none;
+}
+
+#add-subreddit input:focus {
+    outline: none;
+}
+
+#add-subreddit input {
+  width: 180px;
+}
+
+#add-subreddit .react-autosuggest__container--open, #add-subreddit .react-autosuggest__container {
+    display: inline-block;
+}
+#add-subreddit .react-autosuggest__suggestions-list {
+    padding: 0px;
+    margin: 0px;
+    width: 192px;
+}
+
+#add-subreddit .react-autosuggest__suggestions-container {
+    position: absolute;
+}
+#add-subreddit .react-autosuggest__suggestions-container > ul {
+    border: 2px #c9c9c9 solid;
+    border-top: hidden;
+}
+
+
+#add-subreddit .react-autosuggest__suggestions-container li {
+    list-style: none;
+}
+#add-subreddit .react-autosuggest__suggestion, #add-subreddit .react-autosuggest__suggestion--focused {
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+#add-subreddit .react-autosuggest__suggestion {
+    background-color: white;
+}
+
+#add-subreddit .react-autosuggest__suggestion--focused {
+    background-color: #c9c9c9;
+}
+
+#sort>div {
+    display: inline-block;
+    height: 32px;
+    margin: 4px 4px;
+}
+
+#sort button {
+    padding: 8px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+    background-color: white;
+}
+
+#sort button:focus {
+    outline: none;
+}
+
+#sort button:hover {
+    border-bottom: solid 2px #969696;
+    outline: none;
+}
+
+#sort .selected {
+    background-color: #dddddd;
+}
+
+#sort option {
+    display: inline-block;
+    padding: 8px;
+}
+
+.subreddit {
+    display: inline-block;
+    background-color: #dddddd;
+    color: black;
+    margin: 4px;
+    padding: 5px 6px 4px 6px;
+    cursor: pointer;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+    font-size: 1em;
+}
+
+.subreddit:hover {
+    border-bottom: solid 2px #969696;
+    transition: border 0.3s;
+}
+
+.subreddit:after {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "✖";
+    font-size: 13px;
+    color: #969696;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+
+/* remove padding for current image on lightbox */
+
+figcaption {
+    padding: 0px !important;
+}
+
+.lightbox-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: left;
+    height: 40px;
+    outline: none;
+    padding: 5px 5px;
+    position: relative;
+    left: -5;
+    top: 0;
+    vertical-align: bottom;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.spinner {
+    margin: 20px
+}
